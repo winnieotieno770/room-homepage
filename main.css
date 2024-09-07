@@ -1,0 +1,170 @@
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+*{ 
+    margin: 0;
+    padding: 0;
+    font-family: "League Spartan", sans-serif;
+}
+.main{
+ width: 100%;
+ height: 100vh;
+}
+.hero{
+    height: 55vh;
+    display: flex;
+}
+.header{
+    color:hsl(0, 0%, 100%);
+    padding-left: 200px;
+    display: flex; 
+    gap: 40px;
+    margin-top: 70px;
+    align-items: center;
+}
+.nav ul{
+    display: flex;
+    gap: 20px;
+}
+.nav ul li{
+    list-style: none;
+    text-transform: lowercase;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+
+.about{
+    height: 45vh;
+}
+.furniture-image{
+    width:75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+ 
+}
+#hero {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh; /* Adjust as needed */
+}
+
+#hero .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: opacity 1s ease-in-out; /* Adjust the duration as needed */
+    opacity: 0;
+}
+
+#hero .background.active {
+    opacity: 1;
+}
+.description-content{
+    background-color: hsl(0, 0%, 100%);
+    width: 50%;
+    margin: 0 auto;   
+    margin-top: 0px;
+    position: relative;
+}
+.description-content h1{
+    font-size: 2.5rem;
+    color: hsl(0, 0%, 0%);
+    padding: 100px 130px 0 130px;
+}
+.description-content p{
+    font-size: 1rem;
+    width: 400px;
+    margin-top: 30px;
+    line-height: 1.8;
+    color: hsl(0, 0%, 63%);
+    padding: 10px 130px 0 130px;
+}
+.description-content button{
+    border: none;
+    margin:10px 130px 0 130px;
+    letter-spacing: 1rem;
+    font-size: 1rem;
+    background-color: transparent;
+    color: hsl(0, 0%, 27%);
+}
+.description-content button:hover{
+  cursor: pointer;  
+}
+.description-content  img{
+    margin-left: -10px;
+}
+.arrows{
+    position: absolute;
+    display: flex;
+    width: 189px;
+    height: 70px;
+    bottom: 0;
+    
+}
+
+.left{
+    background-color: hsl(0, 0%, 0%);
+    flex: 1;
+    padding: 20px 10PX 20PX 40PX;
+}
+.right{
+    background-color:  hsl(0, 0%, 27%);
+    flex: 1;
+    padding: 20PX 10PX 40PX 20PX;
+}
+.right, .left:hover{
+    cursor: pointer;
+}
+
+/********************ABOUT */
+.about{
+    display: flex;
+    width: 100%;
+    flex-basis: 100%;
+
+}
+.furniture1{
+    flex: 1.6;
+    background-image: url('./images/image-about-dark.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: 100%;
+    overflow: hidden;
+    
+}
+.furniture-about-content{
+   flex:1.9;
+   
+}
+.furniture2{
+    flex: 1.6;
+    background-image: url('./images//image-about-light.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    background-position: 100%;
+}
+
+.about h2{
+    font-size: 1.2rem;
+    color: hsl(0, 0%, 0%);
+    padding: 100px 130px 0 80px;
+    text-transform: uppercase;
+}
+.about p{
+    font-size: 1rem;
+    width: 500px;
+    margin-top: 30px;
+    line-height: 1.8;
+    color: hsl(0, 0%, 63%);
+    padding: 10px 130px 0 80px;
+}
